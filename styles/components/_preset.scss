@@ -1,0 +1,63 @@
+/*====== BUTTON ===========*/
+.btn {
+  width: 180px;
+  height: 64px;
+  text-align: center;
+
+  color: #FFFFFF;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border-radius: 8px;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.blue {
+  background: $color-primary;
+}
+
+.black {
+  background-color: $color-secundary;
+}
+/*========== PARAGRAPH ==========*/
+
+.p_primary {
+  font-family: 'SF Pro Regular';
+  color: $text-body-dark-mode;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+}
+
+/*============ TITLE =============*/
+
+.subtitle {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+
+  letter-spacing: -0.5px;
+
+}
+
+.h3 {
+  width: 468px;
+  height: 80px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  letter-spacing: -0.5px;
+}

@@ -1,0 +1,42 @@
+.section_what_we_do {
+  height: 2124px;
+  background-image: url(/images/section3/gradient\ bg.png);
+
+  .container_what_we_do_02 {
+    display: flex;
+    padding-top: 152px;
+
+    .logoicon {
+      margin-right: 176px;
+    }
+
+    ol {
+      display: flex;
+      gap: 24px;
+
+      li {
+        color: #8B8B8B;
+      }
+    }
+  }
+  .container_what_we_do_title {
+    display: flex;
+    margin-left: 200px;
+    h2 {
+      width: 668px;
+      height: 144px;
+      
+    }
+    .arrows{
+      &:first-child{
+        background-color: red ;
+      }
+    }
+  }
+
+  .service_cards {
+    width: 1170px;
+    height: 584px;
+    margin-top: 96px;
+  }
+}

@@ -1,0 +1,110 @@
+.section_who_we_are {
+  background-image: url(/images/section2/background.png) ;
+  padding-top: 128px;
+  color: white;
+}
+
+.container_who_we_are_01 {
+  display: flex;
+
+  .logoicon {
+    margin-right: 176px;
+  }
+
+  ol {
+    display: flex;
+    gap: 24px;
+
+    li {
+      color: #8B8B8B;
+    }
+
+    p {
+      font-family: 'SF Pro Regular';
+    }
+  }
+}
+
+.container_who_we_are_title {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 24px;
+  margin-left: 200px;
+  margin-bottom: 83px;
+
+  .subtitle {
+    width: 668px;
+    height: 144px;
+
+    margin-right: 158px;
+  }
+
+  .arrows {
+    display: flex;
+    gap: 16px;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.container_who_we_are_years {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .years {
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+    margin-right: 155px;
+
+    h5 {
+      font-family: 'SF Pro Regular';
+      color: $text-body-dark-mode;
+    }
+  }
+
+  .img_computer2 {
+    width: 970px;
+    height: 598px;
+  }
+}
+
+.container_who_we_are_footer {
+  display: flex;
+  justify-content: space-between;
+
+  .container_who_we_are_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 169px;
+    margin-left: 198px;
+
+    .container_line_pink {
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    p {
+      width: 468px;
+      height: 96px;
+    }
+  
+  }
+
+  .container_28bigest {
+    width: 402px;
+    height: 402px;
+
+    img {
+      width: 245px;
+      height: 239px;
+    }
+  }
+}

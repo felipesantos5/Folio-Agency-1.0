@@ -1,0 +1,53 @@
+.section_container_standout {
+  display: flex;
+  margin-top: 94px;
+
+  .section_standout {
+    h1 {
+      width: 467px;
+      height: 300px;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 84px;
+
+      line-height: 100px;
+      letter-spacing: -1px;
+
+      color: #232340;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .introduction {
+      margin-top: 40px;
+      margin-bottom: 48px;
+      width: 367px;
+      height: 96px;
+    }
+
+    .div_scrolldown {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      margin-top: 110px;
+      margin-bottom: 80px;
+    }
+
+    .section_img_computer {
+
+      .img_computer1 {
+        width: 924px;
+        height: 660px;
+      }
+    }
+  }
+}
+
+.section_standout {
+  width: 25%;
+}
+
+.section_img_computer {
+  width: 50%;
+}
