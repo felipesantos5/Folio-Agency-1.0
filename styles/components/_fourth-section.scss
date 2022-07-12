@@ -1,0 +1,66 @@
+.section_famous_projects {
+
+  .container_famous_projects04 {
+    display: flex;
+    align-items: center;
+
+    .logoicon {
+      margin-right: 176px;
+    }
+
+    ol {
+      display: flex;
+      gap: 24px;
+
+      li,
+      h5 {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .container_famous_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-left: 200px;
+
+    h2 {
+      font-size: 84px;
+      color: $color-secundary;
+      line-height: 100.24px;
+
+    }
+
+    button {
+      width: 166px;
+    }
+  }
+
+  .our_partnerships {
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 467px;
+  }
+
+  .container_sec1 {
+    button {
+      width: 166px;
+      height: 40px;
+
+      background: #908CFF;
+      border-radius: 20px;
+      border: none;
+
+      font-family: 'SF Pro Display';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: white;
+
+    }
+  }
+}

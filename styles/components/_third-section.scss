@@ -1,10 +1,14 @@
 .section_what_we_do {
+  background-image: url(/images/section3/SERVICES.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 2124px;
-  background-image: url(/images/section3/gradient\ bg.png);
 
   .container_what_we_do_02 {
     display: flex;
+    align-items: center;
     padding-top: 152px;
+    margin-bottom: 24px;
 
     .logoicon {
       margin-right: 176px;
@@ -14,29 +18,109 @@
       display: flex;
       gap: 24px;
 
-      li {
-        color: #8B8B8B;
-      }
-    }
-  }
-  .container_what_we_do_title {
-    display: flex;
-    margin-left: 200px;
-    h2 {
-      width: 668px;
-      height: 144px;
-      
-    }
-    .arrows{
-      &:first-child{
-        background-color: red ;
+      li,
+      h5 {
+        color: $color-primary;
       }
     }
   }
 
-  .service_cards {
-    width: 1170px;
-    height: 584px;
+  .container_what_we_do_title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    gap: 158px;
+
+    h2 {
+      width: 668px;
+      height: 144px;
+
+      color: $color-secundary;
+    }
+
+    .arrows {
+      display: flex;
+      gap: 16px;
+
+      img {
+        width: 64px;
+      }
+    }
+  }
+
+  .container_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 96px;
+
+    .card {
+      height: 480px;
+    }
+
+    .selected {
+      height: 560px;
+    }
+  }
+
+
+}
+
+.section_achievement_03 {
+  display: flex;
+  align-items: center;
+
+  .container_cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .cell {
+      padding-left: 100px;
+      margin-top: 213px;
+
+      background-image: url(/images/section3/Oval.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .points {
+      width: 96px;
+      height: 16px;
+
+      margin-top: 80px;
+      margin-left: 8px;
+    }
+  }
+
+  .container_achievement_text {
+    height: 494px;
+    margin-left: 210px;
+    margin-top: 104px;
+
+    .container_achievement_header {
+      display: flex;
+      margin-bottom: 40px;
+
+      .logoicon {
+        width: 24px;
+        height: 24px;
+        margin-right: 75px;
+      }
+
+      ol {
+        display: flex;
+        gap: 24px;
+
+        h5 {
+          color: $color-secundary;
+        }
+      }
+
+      .container_achievement_number {
+        margin-top: 80px;
+      }
+    }
   }
 }

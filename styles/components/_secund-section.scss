@@ -1,11 +1,15 @@
 .section_who_we_are {
-  background-image: url(/images/section2/background.png) ;
-  padding-top: 128px;
+  background-image: url(/images/section2/background.png);
+  background-size: cover;
+
   color: white;
+  height: 1710px;
 }
 
 .container_who_we_are_01 {
   display: flex;
+  align-items: center;
+  padding-top: 128px;
 
   .logoicon {
     margin-right: 176px;
@@ -17,10 +21,6 @@
 
     li {
       color: #8B8B8B;
-    }
-
-    p {
-      font-family: 'SF Pro Regular';
     }
   }
 }
@@ -63,14 +63,14 @@
     margin-right: 155px;
 
     h5 {
-      font-family: 'SF Pro Regular';
       color: $text-body-dark-mode;
     }
+
   }
 
   .img_computer2 {
     width: 970px;
-    height: 598px;
+    height: 610px;
   }
 }
 
@@ -82,25 +82,37 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 169px;
-    margin-left: 198px;
+    margin-top: 169px;  
 
     .container_line_pink {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
 
+      width: 668px;
+
+      h3 {
+        width: 468px;
+        height: 80px;
+      }
     }
 
     p {
       width: 468px;
       height: 96px;
+
+      margin-left: 198px;
     }
-  
+
+    button {
+      margin-left: 198px;
+    }
+
   }
 
   .container_28bigest {
     width: 402px;
     height: 402px;
+    margin-top: 192px;
 
     img {
       width: 245px;

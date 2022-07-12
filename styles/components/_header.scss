@@ -1,70 +1,70 @@
 header {
-  width: 1296px;
-  height: 64px;
-  margin: auto;
-  margin-top: 64px;
+  background-image: url(/images/section1/background.png);
+  background-repeat: no-repeat; 
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .navbar {
+    width: 1296px;
+    height: 64px;
+    margin: auto;
+    padding-top: 64px;
 
-    img {
-      height: 40px;
-      
-    }
-  
-    ul {
+    nav {
       display: flex;
-      gap: 64px;
-      margin-left: 293px;
-      margin-right: 272px;
+      justify-content: space-between;
+      align-items: center;
 
-      li {
-        font-family: SF Pro Display;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0px;
+      img {
+        height: 40px;
 
-        &:last-child::after{
-          content: url(/images/notification-blue.svg);
-          position: relative;
-          left: 55px;
-          bottom: 40px;
-          width: 0;
-          height: 0;
-        }
-        
-        a {
-          text-decoration: none;
-          transition: 0.3s;
-        }
+      }
 
-        &:nth-child(odd){
-          a{
-            color: $text-body-light-mode;
+      ul {
+        display: flex;
+        gap: 64px;
+        margin-left: 293px;
+        margin-right: 272px;
+
+        li {
+          font-family: SF Pro Display;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0px;
+
+          &:last-child::after {
+            content: url(/images/notification-blue.svg);
+            position: relative;
+            left: 55px;
+            bottom: 40px;
+            width: 0;
+            height: 0;
           }
-        }
-        &:nth-child(even){
-          a{
-            color: $text-body-dark-mode;
+
+          a {
+            text-decoration: none;
+            transition: 0.3s;
           }
-        }
-        &:hover{
-          a{
-            color: $color-primary;
-            
+
+          &:nth-child(odd) {
+            a {
+              color: $text-body-light-mode;
+            }
+          }
+
+          &:nth-child(even) {
+            a {
+              color: $text-body-dark-mode;
+            }
+          }
+
+          &:hover {
+            a {
+              color: $color-primary;
+
+            }
           }
         }
       }
     }
   }
-}
-
-.line_header {
-  z-index: -1;
-  position: absolute;
-  top: 	0;
-  left: 580px;
 }

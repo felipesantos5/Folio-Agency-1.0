@@ -13,7 +13,7 @@
 
   border-radius: 8px;
   border: none;
-  
+
   cursor: pointer;
 }
 
@@ -24,16 +24,27 @@
 .black {
   background-color: $color-secundary;
 }
+
 /*========== PARAGRAPH ==========*/
 
-.p_primary {
-  font-family: 'SF Pro Regular';
+p {
+  font-family: 'SF Pro Display';
   color: $text-body-dark-mode;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
 
+}
+
+h5,
+li {
+  font-family: 'SF Pro Display';
+  color: $text-body-dark-mode;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 /*============ TITLE =============*/
@@ -44,15 +55,11 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 72px;
-
   letter-spacing: -0.5px;
 
 }
 
 .h3 {
-  width: 468px;
-  height: 80px;
-
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
@@ -60,4 +67,9 @@
   line-height: 40px;
 
   letter-spacing: -0.5px;
+}
+
+.container_main {
+  width: 1195px;
+	margin: auto;
 }

@@ -49,25 +49,14 @@ table {
   border-spacing: 0;
 }
 
-body {
-  max-width: 1440px;
-  margin: auto;
-}
-
-main {
-  max-width: 1195px;
-  margin: auto;
-}
-
 @font-face {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Displayd";
   src: url(/fonts/SFPRODISPLAYBOLD.OTF);
 }
 @font-face {
-  font-family: "SF Pro Regular";
+  font-family: "SF Pro Regulard";
   src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
-}
-/*========= Components =======*/
+} /*========= Components =======*/
 /*====== BUTTON ===========*/
 .btn {
   width: 180px;
@@ -93,11 +82,21 @@ main {
 }
 
 /*========== PARAGRAPH ==========*/
-.p_primary {
-  font-family: "SF Pro Regular";
+p {
+  font-family: "SF Pro Display";
   color: #8B8B8B;
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+h5,
+li {
+  font-family: "SF Pro Display";
+  color: #8B8B8B;
+  font-style: normal;
+  font-weight: 600;
   font-size: 18px;
   line-height: 32px;
 }
@@ -113,8 +112,6 @@ main {
 }
 
 .h3 {
-  width: 468px;
-  height: 80px;
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
@@ -123,34 +120,43 @@ main {
   letter-spacing: -0.5px;
 }
 
+.container_main {
+  width: 1195px;
+  margin: auto;
+}
+
 header {
+  background-image: url(/images/section1/background.png);
+  background-repeat: no-repeat;
+}
+header .navbar {
   width: 1296px;
   height: 64px;
   margin: auto;
-  margin-top: 64px;
+  padding-top: 64px;
 }
-header nav {
+header .navbar nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav img {
+header .navbar nav img {
   height: 40px;
 }
-header nav ul {
+header .navbar nav ul {
   display: flex;
   gap: 64px;
   margin-left: 293px;
   margin-right: 272px;
 }
-header nav ul li {
+header .navbar nav ul li {
   font-family: SF Pro Display;
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0px;
 }
-header nav ul li:last-child::after {
+header .navbar nav ul li:last-child::after {
   content: url(/images/notification-blue.svg);
   position: relative;
   left: 55px;
@@ -158,47 +164,26 @@ header nav ul li:last-child::after {
   width: 0;
   height: 0;
 }
-header nav ul li a {
+header .navbar nav ul li a {
   text-decoration: none;
   transition: 0.3s;
 }
-header nav ul li:nth-child(odd) a {
+header .navbar nav ul li:nth-child(odd) a {
   color: #606060;
 }
-header nav ul li:nth-child(even) a {
+header .navbar nav ul li:nth-child(even) a {
   color: #8B8B8B;
 }
-header nav ul li:hover a {
+header .navbar nav ul li:hover a {
   color: #5468E7;
 }
 
-.line_header {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 580px;
-}
-
 .section_container_standout {
-  display: flex;
   margin-top: 94px;
 }
-.section_container_standout .section_standout h1 {
-  width: 467px;
-  height: 300px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 84px;
-  line-height: 100px;
-  letter-spacing: -1px;
-  color: #232340;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.section_container_standout .section_standout .introduction {
-  margin-top: 40px;
-  margin-bottom: 48px;
-  width: 367px;
-  height: 96px;
+.section_container_standout .section_standout {
+  display: flex;
+  justify-content: space-between;
 }
 .section_container_standout .section_standout .div_scrolldown {
   display: flex;
@@ -211,23 +196,43 @@ header nav ul li:hover a {
   width: 924px;
   height: 660px;
 }
+.section_container_standout .section_standout_text h1 {
+  width: 467px;
+  height: 300px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: #232340;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.section_container_standout .section_standout_text .introduction {
+  margin-top: 40px;
+  margin-bottom: 48px;
+  width: 367px;
+  height: 96px;
+}
 
-.section_standout {
-  width: 25%;
+.section_standout_text {
+  width: 15%;
 }
 
 .section_img_computer {
-  width: 50%;
+  width: 75%;
 }
 
 .section_who_we_are {
   background-image: url(/images/section2/background.png);
-  padding-top: 128px;
+  background-size: cover;
   color: white;
+  height: 1710px;
 }
 
 .container_who_we_are_01 {
   display: flex;
+  align-items: center;
+  padding-top: 128px;
 }
 .container_who_we_are_01 .logoicon {
   margin-right: 176px;
@@ -238,9 +243,6 @@ header nav ul li:hover a {
 }
 .container_who_we_are_01 ol li {
   color: #8B8B8B;
-}
-.container_who_we_are_01 ol p {
-  font-family: "SF Pro Regular";
 }
 
 .container_who_we_are_title {
@@ -276,12 +278,11 @@ header nav ul li:hover a {
   margin-right: 155px;
 }
 .container_who_we_are_years .years h5 {
-  font-family: "SF Pro Regular";
   color: #8B8B8B;
 }
 .container_who_we_are_years .img_computer2 {
   width: 970px;
-  height: 598px;
+  height: 610px;
 }
 
 .container_who_we_are_footer {
@@ -293,19 +294,28 @@ header nav ul li:hover a {
   flex-direction: column;
   gap: 40px;
   margin-top: 169px;
-  margin-left: 198px;
 }
 .container_who_we_are_footer .container_who_we_are_text .container_line_pink {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 668px;
+}
+.container_who_we_are_footer .container_who_we_are_text .container_line_pink h3 {
+  width: 468px;
+  height: 80px;
 }
 .container_who_we_are_footer .container_who_we_are_text p {
   width: 468px;
   height: 96px;
+  margin-left: 198px;
+}
+.container_who_we_are_footer .container_who_we_are_text button {
+  margin-left: 198px;
 }
 .container_who_we_are_footer .container_28bigest {
   width: 402px;
   height: 402px;
+  margin-top: 192px;
 }
 .container_who_we_are_footer .container_28bigest img {
   width: 245px;
@@ -313,12 +323,16 @@ header nav ul li:hover a {
 }
 
 .section_what_we_do {
+  background-image: url(/images/section3/SERVICES.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 2124px;
-  background-image: url(/images/section3/gradient\ bg.png);
 }
 .section_what_we_do .container_what_we_do_02 {
   display: flex;
+  align-items: center;
   padding-top: 152px;
+  margin-bottom: 24px;
 }
 .section_what_we_do .container_what_we_do_02 .logoicon {
   margin-right: 176px;
@@ -327,22 +341,135 @@ header nav ul li:hover a {
   display: flex;
   gap: 24px;
 }
-.section_what_we_do .container_what_we_do_02 ol li {
-  color: #8B8B8B;
+.section_what_we_do .container_what_we_do_02 ol li,
+.section_what_we_do .container_what_we_do_02 ol h5 {
+  color: #5468E7;
 }
 .section_what_we_do .container_what_we_do_title {
   display: flex;
+  justify-content: space-between;
   margin-left: 200px;
+  gap: 158px;
 }
 .section_what_we_do .container_what_we_do_title h2 {
   width: 668px;
   height: 144px;
+  color: #232340;
 }
-.section_what_we_do .container_what_we_do_title .arrows:first-child {
-  background-color: red;
+.section_what_we_do .container_what_we_do_title .arrows {
+  display: flex;
+  gap: 16px;
 }
-.section_what_we_do .service_cards {
-  width: 1170px;
-  height: 584px;
+.section_what_we_do .container_what_we_do_title .arrows img {
+  width: 64px;
+}
+.section_what_we_do .container_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 96px;
+}
+.section_what_we_do .container_cards .card {
+  height: 480px;
+}
+.section_what_we_do .container_cards .selected {
+  height: 560px;
+}
+
+.section_achievement_03 {
+  display: flex;
+  align-items: center;
+}
+.section_achievement_03 .container_cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section_achievement_03 .container_cell .cell {
+  padding-left: 100px;
+  margin-top: 213px;
+  background-image: url(/images/section3/Oval.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section_achievement_03 .container_cell .points {
+  width: 96px;
+  height: 16px;
+  margin-top: 80px;
+  margin-left: 8px;
+}
+.section_achievement_03 .container_achievement_text {
+  height: 494px;
+  margin-left: 210px;
+  margin-top: 104px;
+}
+.section_achievement_03 .container_achievement_text .container_achievement_header {
+  display: flex;
+  margin-bottom: 40px;
+}
+.section_achievement_03 .container_achievement_text .container_achievement_header .logoicon {
+  width: 24px;
+  height: 24px;
+  margin-right: 75px;
+}
+.section_achievement_03 .container_achievement_text .container_achievement_header ol {
+  display: flex;
+  gap: 24px;
+}
+.section_achievement_03 .container_achievement_text .container_achievement_header ol h5 {
+  color: #232340;
+}
+.section_achievement_03 .container_achievement_text .container_achievement_header .container_achievement_number {
+  margin-top: 80px;
+}
+
+.section_famous_projects .container_famous_projects04 {
+  display: flex;
+  align-items: center;
+}
+.section_famous_projects .container_famous_projects04 .logoicon {
+  margin-right: 176px;
+}
+.section_famous_projects .container_famous_projects04 ol {
+  display: flex;
+  gap: 24px;
+}
+.section_famous_projects .container_famous_projects04 ol li,
+.section_famous_projects .container_famous_projects04 ol h5 {
+  color: #5468E7;
+}
+.section_famous_projects .container_famous_title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-left: 200px;
+}
+.section_famous_projects .container_famous_title h2 {
+  font-size: 84px;
+  color: #232340;
+  line-height: 100.24px;
+}
+.section_famous_projects .container_famous_title button {
+  width: 166px;
+}
+.section_famous_projects .our_partnerships {
+  margin-top: 40px;
+  margin-left: 200px;
+  width: 467px;
+}
+.section_famous_projects .container_sec1 button {
+  width: 166px;
+  height: 40px;
+  background: #908CFF;
+  border-radius: 20px;
+  border: none;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
